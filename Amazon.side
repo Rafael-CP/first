@@ -1,0 +1,171 @@
+{
+  "id": "796c866e-60fb-4872-9a21-0d9a3af09af0",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "https://www.amazon.com.br",
+  "tests": [{
+    "id": "b90dbc1c-aac1-448e-b51c-6be009642bf1",
+    "name": "Compra 1",
+    "commands": [{
+      "id": "248df985-3408-4c92-a875-9cb023b01841",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "485c3c3d-64f5-4958-9844-bd39c6a2e280",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbc7ed9e-4dd5-4a6c-94c6-f98324c8ba30",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nav-logo-sprites",
+      "targets": [
+        ["id=nav-logo-sprites", "id"],
+        ["linkText=.com.br", "linkText"],
+        ["css=#nav-logo-sprites", "css:finder"],
+        ["xpath=//a[@id='nav-logo-sprites']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-logo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ref=nav_logo')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'.com.br')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21865d3a-6489-4014-b87d-8e9e8d219840",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ce6d154-55f2-4a82-b209-78452c82bf21",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Memoria ram ddr4 8gb"
+    }, {
+      "id": "9e907a0e-b274-4a84-b53e-b47e84321c84",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "23be9b08-38ac-40da-9159-a2f448dc9026",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sg-col-4-of-12:nth-child(1) .s-image",
+      "targets": [
+        ["css=.sg-col-4-of-12:nth-child(1) .s-image", "css:finder"],
+        ["xpath=//img[@alt='HX426C16FB3/8 - Memória HyperX Fury de 8GB DIMM DDR4 2666Mhz 1,2V para desktop']", "xpath:img"],
+        ["xpath=//div[@id='search']/div/div/div/div/span[3]/div[2]/div/div/span/div/div/span/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76777252-5160-44e6-8fb7-61c26c3a4694",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=productTitle",
+      "targets": [
+        ["id=productTitle", "id"],
+        ["css=#productTitle", "css:finder"],
+        ["xpath=//span[@id='productTitle']", "xpath:attributes"],
+        ["xpath=//h1[@id='title']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'HX426C16FB3/8 - Memória HyperX Fury de 8GB DIMM DDR4 2666Mhz 1,2V para desktop')]", "xpath:innerText"]
+      ],
+      "value": "HX426C16FB3/8 - Memória HyperX Fury de 8GB DIMM DDR4 2666Mhz 1,2V para desktop"
+    }, {
+      "id": "3447933d-b454-4ab6-88d7-2dbfaf1304bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#availability > .a-size-medium",
+      "targets": [
+        ["css=#availability > .a-size-medium", "css:finder"],
+        ["xpath=//div[@id='availability']/span", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Em estoque.')]", "xpath:innerText"]
+      ],
+      "value": "Em estoque."
+    }, {
+      "id": "db1dc014-6e5c-40ef-b60f-8089e2528611",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37e7089b-38a2-4a4b-ba5a-8db05c5cbce6",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1f37fe7-5fc1-4a07-bb36-9488a980ad8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#huc-v2-order-row-confirm-text > .a-size-medium",
+      "targets": [
+        ["css=#huc-v2-order-row-confirm-text > .a-size-medium", "css:finder"],
+        ["xpath=//div[@id='huc-v2-order-row-confirm-text']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Adicionado ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": "Adicionado ao carrinho"
+    }]
+  }],
+  "suites": [{
+    "id": "8c48b6c4-8c82-4250-8fb8-61089e4a4cdb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b90dbc1c-aac1-448e-b51c-6be009642bf1"]
+  }],
+  "urls": ["https://www.amazon.com.br/"],
+  "plugins": []
+}
