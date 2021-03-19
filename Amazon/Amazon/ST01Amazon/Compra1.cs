@@ -29,6 +29,8 @@ public class Compra1Test {
   }
   [Test]
   public void compra1() {
+
+    driver.Navigate().GoToUrl("https://www.google.com.br/");
     driver.Navigate().GoToUrl("https://www.amazon.com.br/");
 
     driver.Manage().Window.Size = new System.Drawing.Size(1382, 744);
