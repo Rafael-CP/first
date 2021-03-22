@@ -35,6 +35,7 @@ public class Compra1Test {
     driver.Manage().Window.Maximize(); //Maximiza a janela do browser
     //comentário TESTE git diff
     //comentário para testar github
+    //testando github com visual code 
     driver.Manage().Window.Size = new System.Drawing.Size(1382, 744);
 
     var elements = driver.FindElements(By.Id("nav-logo-sprites"));
