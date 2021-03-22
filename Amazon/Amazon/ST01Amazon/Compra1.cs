@@ -34,6 +34,7 @@ public class Compra1Test {
     driver.Navigate().GoToUrl("https://www.amazon.com.br/");
     driver.Manage().Window.Maximize(); //Maximiza a janela do browser
     //comentário TESTE git diff
+    //comentário para testar github
     driver.Manage().Window.Size = new System.Drawing.Size(1382, 744);
 
     var elements = driver.FindElements(By.Id("nav-logo-sprites"));
