@@ -36,6 +36,7 @@ public class Compra1Test {
     //comentário TESTE git diff
     //comentário para testar github
     //testando github com visual code 
+    //comentario para mesclar futuramente
     driver.Manage().Window.Size = new System.Drawing.Size(1382, 744);
 
     var elements = driver.FindElements(By.Id("nav-logo-sprites"));
